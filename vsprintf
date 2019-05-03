@@ -19,7 +19,7 @@ unsigned long simple_strtoul(const char *cp,char **endp,unsigned int base) // �
 {
 	unsigned long result = 0,value;
 
-	if (!base) { //如果base为0，由字符串转换禁止 
+	if (!base) { //如果base为0，由字符串转换进制
 		base = 10;
 		if (*cp == '0') {
 			base = 8;
